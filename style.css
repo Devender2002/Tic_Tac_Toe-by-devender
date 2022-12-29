@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@700&display=swap');
+/* CSS Reset */
+body, html, *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS Variables */
+
+/* 
+    Responsive in all height if width is full
+    Responsive if width is greater than or equals to 700
+    Problem will be in width less than 700
+*/
+:root
+{
+    --greetFontSize : 7vh;
+    --greetMargin : 2vh;
+    --gameBoxGridSize : 20vh;
+    --elementFontSize : 15vh;
+    --elementBorder : 5px;
+    --statusFontSize : 7vh;
+    --statusMargin : 2vh;
+    --btnHeight : 7vh;
+    --btnWidth : 20vh;
+    --btnMargin : 2vh;
+    --btnPadding : 1vh;
+    --btnBorderRadius : 1vh;
+    --btnFontSize : 3vh;
+    --infoWidth : 100vw;
+    --containerHeight : 100vh;
+    --containerWidth : 100vw;
+}
+.container
+{
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* height: var(--containerHeight);
+    width: var(--containerWidth); */
+    background-color: aqua;
+}
+#greet
+{
+    font-size: var(--greetFontSize);
+    color: red;
+    font-family: 'Dancing Script', cursive;
+    margin: var(--greetMargin);
+}
+.gameBox
+{
+    display: grid;
+    grid-template-columns: repeat(3, var(--gameBoxGridSize));
+    grid-template-rows: repeat(3, var(--gameBoxGridSize));
+    grid-gap: 0;
+}
+.element
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--elementFontSize);
+    border: var(--elementBorder) solid rgb(109, 107, 107);
+    font-family: 'Roboto', sans-serif;
+    color: blue;
+    cursor: pointer;
+}
+.element:hover
+{
+    background-color: rgb(153, 245, 157);
+}
+.info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: var(--infoWidth); */
+    width: 100vw;
+}
+#status
+{
+    display: block;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: red;
+    font-size: var(--statusFontSize);
+    margin: var(--statusMargin) 0;
+}
+#btn
+{
+    background-color: rgb(8, 230, 8);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--btnBorderRadius);
+    height: var(--btnHeight);
+    width: var(--btnWidth);
+    margin: var(--btnMargin) 0;
+    padding: var(--btnPadding);
+    color: white;
+    font-size: var(--btnFontSize);
+    font-weight: bold;
+}
+#btn:hover
+{
+    background-color: rgb(16, 170, 16);
+    color: rgb(236, 223, 223);
+}
+
+/* Utility classes */
+.bl-0
+{
+    border-left: 0;
+}
+.br-0
+{
+    border-right: 0;
+}
+.bt-0
+{
+    border-top: 0;
+}
+.bb-0
+{
+    border-bottom: 0;
+}
