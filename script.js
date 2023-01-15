@@ -1,7 +1,5 @@
-/*
-    This game is based on the basic concepts of HTML, CSS, and JavaScript. The developer of this game is IITian Sudheer Kumar Prajapat.
-*/
-// Writing Functions 
+
+
 function setupGame() // Function to setup game window for player
 {
     matchStatus.innerText = "Click on the Play Button to start the game."
