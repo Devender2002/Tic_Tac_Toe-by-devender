@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@700&display=swap');
-/* CSS Reset */
+
 body, html, *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* CSS Variables */
 
-/* 
-    Responsive in all height if width is full
-    Responsive if width is greater than or equals to 700
-    Problem will be in width less than 700
-*/
 :root
 {
     --greetFontSize : 7vh;
